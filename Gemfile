@@ -88,3 +88,7 @@ group :development do
   gem 'rubocop-rails', require: false # 追加
   gem 'rubocop-rspec' # 追加
 end
+
+group :development do
+  gem 'annotate'
+end
