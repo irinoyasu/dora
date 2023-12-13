@@ -1,0 +1,2 @@
+class RelayPoint < ApplicationRecord
+end

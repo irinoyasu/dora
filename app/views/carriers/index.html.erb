@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="my-4">Carriers</h1>
+  <div class="row">
+    <% @carriers.each do |carrier| %>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">
+              <%= carrier.name if carrier.respond_to?(:name) %>
+            </h4>
+            <p class="card-text">
+              <% carrier.attributes.each do |attr_name, attr_value| %>
+                <%= "#{attr_name}: #{attr_value}" %><br>
+              <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

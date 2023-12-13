@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shipper_id: MyString
+  company_name: MyString
+  contact_info: MyText
+  history_of_shipments: MyText
+
+two:
+  shipper_id: MyString
+  company_name: MyString
+  contact_info: MyText
+  history_of_shipments: MyText

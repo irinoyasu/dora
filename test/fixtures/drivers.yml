@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver_id: MyString
+  name: MyString
+  license_details: MyText
+  experience: 1
+  availability_status: false
+
+two:
+  driver_id: MyString
+  name: MyString
+  license_details: MyText
+  experience: 1
+  availability_status: false

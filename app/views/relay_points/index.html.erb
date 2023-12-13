@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Relay points</h1>
+
+<div id="relay_points">
+  <% @relay_points.each do |relay_point| %>
+    <%= render relay_point %>
+    <p>
+      <%= link_to "Show this relay point", relay_point %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New relay point", new_relay_point_path %>

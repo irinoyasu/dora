@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  relay_point_id: MyString
+  location: MyString
+  capacity: 1
+  available_services: MyText
+  contact_info: MyText
+
+two:
+  relay_point_id: MyString
+  location: MyString
+  capacity: 1
+  available_services: MyText
+  contact_info: MyText

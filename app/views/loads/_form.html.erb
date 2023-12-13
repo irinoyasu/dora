@@ -1,0 +1,42 @@
+<%= form_with(model: load) do |form| %>
+  <% if load.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(load.errors.count, "error") %> prohibited this load from being saved:</h2>
+
+      <ul>
+        <% load.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :load_id, style: "display: block" %>
+    <%= form.text_field :load_id %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :size, style: "display: block" %>
+    <%= form.text_field :size %>
+  </div>
+
+  <div>
+    <%= form.label :destination, style: "display: block" %>
+    <%= form.text_field :destination %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

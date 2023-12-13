@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  load_id: MyString
+  description: MyText
+  size: MyString
+  destination: MyString
+  status: MyString
+
+two:
+  load_id: MyString
+  description: MyText
+  size: MyString
+  destination: MyString
+  status: MyString

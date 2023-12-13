@@ -1,0 +1,82 @@
+<%= form_with(model: carrier) do |form| %>
+  <% if carrier.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(carrier.errors.count, "error") %> prohibited this carrier from being saved:</h2>
+
+      <ul>
+        <% carrier.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :carrier_id, style: "display: block" %>
+    <%= form.text_field :carrier_id %>
+  </div>
+
+  <div>
+    <%= form.label :registration_date, style: "display: block" %>
+    <%= form.date_field :registration_date %>
+  </div>
+
+  <div>
+    <%= form.label :capital, style: "display: block" %>
+    <%= form.number_field :capital %>
+  </div>
+
+  <div>
+    <%= form.label :number_of_employees, style: "display: block" %>
+    <%= form.number_field :number_of_employees %>
+  </div>
+
+  <div>
+    <%= form.label :vehicle_type1, style: "display: block" %>
+    <%= form.text_field :vehicle_type1 %>
+  </div>
+
+  <div>
+    <%= form.label :vehicle_type2, style: "display: block" %>
+    <%= form.text_field :vehicle_type2 %>
+  </div>
+
+  <div>
+    <%= form.label :vehicle_type3, style: "display: block" %>
+    <%= form.text_field :vehicle_type3 %>
+  </div>
+
+  <div>
+    <%= form.label :vehicle_type4, style: "display: block" %>
+    <%= form.text_field :vehicle_type4 %>
+  </div>
+
+  <div>
+    <%= form.label :vehicle_type5, style: "display: block" %>
+    <%= form.text_field :vehicle_type5 %>
+  </div>
+
+  <div>
+    <%= form.label :presence_of_warehouse, style: "display: block" %>
+    <%= form.check_box :presence_of_warehouse %>
+  </div>
+
+  <div>
+    <%= form.label :insurance_policy1, style: "display: block" %>
+    <%= form.text_area :insurance_policy1 %>
+  </div>
+
+  <div>
+    <%= form.label :insurance_policy2, style: "display: block" %>
+    <%= form.text_area :insurance_policy2 %>
+  </div>
+
+  <div>
+    <%= form.label :guarantee_amount, style: "display: block" %>
+    <%= form.number_field :guarantee_amount %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

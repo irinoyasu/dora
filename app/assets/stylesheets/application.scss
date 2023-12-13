@@ -14,7 +14,8 @@
  *= require_self
  */
 
- @import "bootstrap";
+// @import "bootstrap-sprockets";
+@import "bootstrap";
 
 body{
     max-height: 100vh;
@@ -26,4 +27,6 @@ body{
     text-align: center;
     padding-top: 5rem;
 }
+
+
 

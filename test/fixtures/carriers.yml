@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  carrier_id: MyString
+  registration_date: 2023-12-13
+  capital: 1
+  number_of_employees: 1
+  vehicle_type1: MyString
+  vehicle_type2: MyString
+  vehicle_type3: MyString
+  vehicle_type4: MyString
+  vehicle_type5: MyString
+  presence_of_warehouse: false
+  insurance_policy1: MyText
+  insurance_policy2: MyText
+  guarantee_amount: 1
+
+two:
+  carrier_id: MyString
+  registration_date: 2023-12-13
+  capital: 1
+  number_of_employees: 1
+  vehicle_type1: MyString
+  vehicle_type2: MyString
+  vehicle_type3: MyString
+  vehicle_type4: MyString
+  vehicle_type5: MyString
+  presence_of_warehouse: false
+  insurance_policy1: MyText
+  insurance_policy2: MyText
+  guarantee_amount: 1

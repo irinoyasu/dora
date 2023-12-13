@@ -1,0 +1,42 @@
+<%= form_with(model: dispatcher) do |form| %>
+  <% if dispatcher.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dispatcher.errors.count, "error") %> prohibited this dispatcher from being saved:</h2>
+
+      <ul>
+        <% dispatcher.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :dispatcher_id, style: "display: block" %>
+    <%= form.text_field :dispatcher_id %>
+  </div>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :contact_info, style: "display: block" %>
+    <%= form.text_area :contact_info %>
+  </div>
+
+  <div>
+    <%= form.label :assigned_loads, style: "display: block" %>
+    <%= form.text_area :assigned_loads %>
+  </div>
+
+  <div>
+    <%= form.label :schedule, style: "display: block" %>
+    <%= form.text_area :schedule %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

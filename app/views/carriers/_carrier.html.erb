@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.iife.min.js"></script>
+<div id="<%= dom_id carrier %>">
+  <p>
+    <strong>Carrier:</strong>
+    <%= carrier.carrier_id %>
+  </p>
+
+  <p>
+    <strong>Registration date:</strong>
+    <%= carrier.registration_date %>
+  </p>
+
+  <p>
+    <strong>Capital:</strong>
+    <%= carrier.capital %>
+  </p>
+
+  <p>
+    <strong>Number of employees:</strong>
+    <%= carrier.number_of_employees %>
+  </p>
+
+  <p>
+    <strong>Vehicle type1:</strong>
+    <%= carrier.vehicle_type1 %>
+  </p>
+
+  <p>
+    <strong>Vehicle type2:</strong>
+    <%= carrier.vehicle_type2 %>
+  </p>
+
+  <p>
+    <strong>Vehicle type3:</strong>
+    <%= carrier.vehicle_type3 %>
+  </p>
+
+  <p>
+    <strong>Vehicle type4:</strong>
+    <%= carrier.vehicle_type4 %>
+  </p>
+
+  <p>
+    <strong>Vehicle type5:</strong>
+    <%= carrier.vehicle_type5 %>
+  </p>
+
+  <p>
+    <strong>Presence of warehouse:</strong>
+    <%= carrier.presence_of_warehouse %>
+  </p>
+
+  <p>
+    <strong>Insurance policy1:</strong>
+    <%= carrier.insurance_policy1 %>
+  </p>
+
+  <p>
+    <strong>Insurance policy2:</strong>
+    <%= carrier.insurance_policy2 %>
+  </p>
+
+  <p>
+    <strong>Guarantee amount:</strong>
+    <%= carrier.guarantee_amount %>
+  </p>
+
+</div>
+
+<script>
+  $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+</script>
