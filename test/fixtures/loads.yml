@@ -1,4 +1,16 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: loads
+#
+#  id          :bigint           not null, primary key
+#  description :text
+#  destination :string
+#  size        :string
+#  status      :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  load_id     :string
+#
 
 one:
   load_id: MyString

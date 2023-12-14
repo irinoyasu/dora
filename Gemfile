@@ -10,11 +10,11 @@ gem 'rails', '~> 7.0.3'
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
-group :development do
-  gem 'sqlite3', '~> 1.4'
-end
+# group :development do
+#   gem 'sqlite3', '~> 1.4'
+# end
 
-group :production do
+group :development, :production do
   gem 'pg'
 end
 
@@ -95,6 +95,5 @@ group :development do
   gem 'rubocop-rspec' # 追加
 end
 
-group :development do
-  gem 'annotate'
-end
+gem 'annotate'
+
