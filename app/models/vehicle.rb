@@ -11,5 +11,10 @@
 #  updated_at         :datetime         not null
 #  vehicle_id         :string
 #
+
+# app/models/vehicle.rb
 class Vehicle < ApplicationRecord
-end
+    # Attributes: VehicleID, Type, CarrierID (Foreign Key)
+    belongs_to :carrier
+    has_many :assignments
+  end

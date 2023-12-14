@@ -19,5 +19,8 @@
 #  updated_at            :datetime         not null
 #  carrier_id            :string
 #
+
 class Carrier < ApplicationRecord
-end
+    # Attributes: CarrierID, RegistrationDate, Capital, NumberOfEmployees, VehicleTypes, PresenceOfWarehouse, InsurancePolicies, GuaranteeAmount
+    has_many :vehicles
+  end

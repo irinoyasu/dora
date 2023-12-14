@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :assignments
   resources :loads
   resources :shippers
   resources :relay_points

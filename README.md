@@ -1,16 +1,9 @@
 # Rails 7 Example App with Devise and Bootstrap
-Rails 7 with Devise 4.8.1 and Bootstrap 5
-
-This project is meant to serve as an example implementation of the Devise gem in a Rails 7 application. Bootstrap 5 is added throught the Bootstrap gem. All the Devise views come pre-styled. It is my goal to provide a Rails example app with up-to-date features.
-
-Feel free to use this as a skeleton for your project, fork it for your own purposes, or contribute to this repo.
-
-This project is a work in progress; I plan to add more authentication features and better styling.
 
 ## Getting Started
 
 ### Requirements
-- Ruby 3.0.3
+- Ruby 3.2.3
 - Rails 7
 
 ### Install
