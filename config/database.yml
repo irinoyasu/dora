@@ -40,8 +40,11 @@ test:
   <<: *default
   database: dora_test
 
+# production:
+#   <<: *default
+#   database: dora_production
+#   username: postgres
+#   password: postgres
+
 production:
-  <<: *default
-  database: dora_production
-  username: postgres
-  password: postgres
+  url: <%= ENV['DATABASE_URL'] %>
